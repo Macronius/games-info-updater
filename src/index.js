@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 //REDUX SETUP
-import {createStore} from 'redux'
+import {createStore, applyMiddleware, compose} from 'redux'
 import rootReducer from './reducers'
-import {Provider} from 'react-redux'
+import {Provider} from 'react-redux' //Provider connects the react app to redux and provides react application with access to the redux store
+import thunk from 'redux-thunk'
+
+// const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION__ / window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
 
 const store = createStore(
-  rootReducer//,
-  //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  rootReducer,
+  composeEnhancer(applyMiddleware(thunk))
 )
 
 
