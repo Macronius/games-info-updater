@@ -56,3 +56,8 @@ const new_games = `games?key=${API_KEY}&dates=${LAST_YEAR},${CURRENT_DATE}&order
 export const popularGamesURL = ()=> `${BASE_URL}${popular_games}`
 export const upcomingGamesURL = ()=> `${BASE_URL}${upcoming_games}`
 export const newGamesURL = ()=> `${BASE_URL}${new_games}`
+
+//GAME DETAILS
+// export const gameDetailsURL = (game_id)=> `${BASE_URL}games?key=${API_KEY}&/${game_id}`
+export const gameDetailsURL = (game_id)=> `${BASE_URL}games/${game_id}?key=${API_KEY}&`
+export const gameScreenshotURL = (game_id)=> `${BASE_URL}games/${game_id}/screenshots?key=${API_KEY}&`

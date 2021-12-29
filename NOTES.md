@@ -27,3 +27,5 @@ DEFINITIONS
     applyMiddleware - checks on every action that is being dispatched, and adds something between (in this case, thunk is the middleware)
 
     compose - single-argument functions from right to left.  The rightmost function can take multiple arguments as it provides the signature for the resulting composite (basically combine multiple arguments)
+
+    useSelector - get things back from the store (from the state)
