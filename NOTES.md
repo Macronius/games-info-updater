@@ -6,6 +6,10 @@ installed redux devtools to the redux createStore
     https://github.com/zalmoxisus/redux-devtools-extension
 
 
+the api slug, the order of each part of the URL does not matter, however, when it comes to specifiers, such as games/13, where 13 is the id 
+    of a particular game, the id must immediately follow the keyword games.
+with regard to the api url, the api_key is followed by the '?', all othe request slugs are followed by the '&'
+
 
 DEFINITIONS
 
@@ -29,3 +33,5 @@ DEFINITIONS
     compose - single-argument functions from right to left.  The rightmost function can take multiple arguments as it provides the signature for the resulting composite (basically combine multiple arguments)
 
     useSelector - get things back from the store (from the state)
+
+    dispatch - 
