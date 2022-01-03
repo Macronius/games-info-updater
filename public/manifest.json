@@ -1,6 +1,9 @@
 {
-  "short_name": "React App",
+  "dir": "rtl",
+  "lang": "en-US",
+  "short_name": "Ignite Gameing Updates",
   "name": "Create React App Sample",
+  "description": "Cool application that gets real-time and historical data from the Rawg.io API",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +23,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#000C61",
   "background_color": "#ffffff"
 }

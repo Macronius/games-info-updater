@@ -1,3 +1,26 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import {createStore, applyMiddleware, compose} from 'redux'
+import {Provider, useSelector, useDispatch} from 'react-redux'
+import thunk from 'redux-thunk'
+import {motion, AnimatePresence, AnimateSharedLayout} from 'framer-motion'
+import styled from 'styled-components'
+import axios from 'axios'
+
+import {useHistory} -> {useNavigate} from 'react-router-dom'
+
+
+=========================================================
+TODO: revisit #16 - refactoring the wallpaper size images to smaller images
+
+
+
+
+=========================================================
+NOTE: about AnimatePresence, the motion component this is applied to should have some kind of toggled-boolean value to it (click-> true, clickAgain-> false)
+
+AnimateSharedLayout, this is a wrapper for the components that will receive the animation transition
 
 
 
