@@ -128,6 +128,7 @@ const Games = styled(motion.div)`
     grid-column-gap: 3rem;
     grid-row-gap: 5rem;
     /* cursor: pointer; */
+    
 `
 
 export default Home

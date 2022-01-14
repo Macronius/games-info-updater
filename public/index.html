@@ -14,6 +14,10 @@
 
         <title>React App</title>
 
+        <script src="../src/lightDarkToggler.js" defer></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;500&display=swap" rel="stylesheet" crossorigin>
@@ -21,5 +25,31 @@
 
     <body>
         <div id="root"></div>
+
+        <script>
+            //function to set a given theme-color-scheme
+            function setTheme(themeName) {
+                localStorage.setItem('themeNameFromIndex', themeName)
+                document.documentElement.className = themeName
+            }
+
+            //function to toggle between light and dark theme
+            function toggleTheme() {
+                if(localStorage.getItem('themeNameFromIndex') === 'theme-dark') {
+                    setTheme('theme-light')
+                } else {
+                    setTheme('theme-dark')
+                }
+            }
+
+            //immediately invoked function to set the theme on initial load
+            (function() {
+                if(localStorage.getItem('themeNameFromIndex') === 'theme-dark') {
+                    setTheme('theme-dark')
+                } else {
+                    setTheme('theme-light')
+                }
+            })()
+        </script>
     </body>
 </html>

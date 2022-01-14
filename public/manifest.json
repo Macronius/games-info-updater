@@ -3,7 +3,7 @@
   "lang": "en-US",
   "short_name": "Ignite Gameing Updates",
   "name": "Create React App Sample",
-  "description": "Cool application that gets real-time and historical data from the Rawg.io API",
+  "description": "MANIFEST DESCRIPTION: application that gets real-time and historical game data from the Rawg.io API",
   "icons": [
     {
       "src": "favicon.ico",
